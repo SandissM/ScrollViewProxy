@@ -1,6 +1,7 @@
 // Created by Casper Zandbergen on 01/06/2020.
 // https://twitter.com/amzdme
 
+#if canImport(Combine) && canImport(SwiftUI)
 import Introspect
 import SwiftUI
 import Combine
@@ -252,4 +253,4 @@ public struct ScrollViewProxy {
         coordinator.frames[id] = geometry.frame(in: .named(space))
     }
 }
-
+#endif
